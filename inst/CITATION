@@ -1,0 +1,16 @@
+citHeader("To cite package 'fluxtools' in publications use:")
+
+bibentry(
+	key = "fluxtools",
+    bibtype = "Manual",
+    title   = "fluxtools: Interactive QA/QC for AmeriFlux Data",
+    author  = person(
+      given  = "Kesondra",
+      family = "Key",
+      email  = "keyke@iu.edu",
+      role   = c("aut", "cre")
+    ),
+    year    = "2025",
+    note    = "Fluxtools v0.3.0; doi:10.5281/zenodo.15597159",
+    url     = "https://github.com/kesondrakey/fluxtools"
+)
