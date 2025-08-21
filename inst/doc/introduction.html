@@ -12,7 +12,7 @@
 
 <meta name="author" content="Kesondra Key" />
 
-<meta name="date" content="2025-07-20" />
+<meta name="date" content="2025-08-21" />
 
 <title>Introduction to Fluxtools</title>
 
@@ -29,6 +29,230 @@ document.addEventListener('DOMContentLoaded', function(e) {
   }
 });
 </script>
+<script>$(document).ready(function(){
+    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+    if ($('[data-toggle="popover"]').popover === 'function') {
+        $('[data-toggle="popover"]').popover();
+    }
+});
+</script>
+<style type="text/css">
+.lightable-minimal {
+border-collapse: separate;
+border-spacing: 16px 1px;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-minimal td {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal th {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal thead tr:last-child th {
+border-bottom: 2px solid #00000050;
+empty-cells: hide;
+}
+.lightable-minimal tbody tr:first-child td {
+padding-top: 0.5em;
+}
+.lightable-minimal.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic {
+border-top: 0.16em solid #111111;
+border-bottom: 0.16em solid #111111;
+width: 100%;
+margin-bottom: 10px;
+margin: 10px 5px;
+}
+.lightable-classic tfoot tr td {
+border: 0;
+}
+.lightable-classic tfoot tr:first-child td {
+border-top: 0.14em solid #111111;
+}
+.lightable-classic caption {
+color: #222222;
+}
+.lightable-classic td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic thead tr:last-child th {
+border-bottom: 0.10em solid #111111;
+}
+.lightable-classic.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic-2 {
+border-top: 3px double #111111;
+border-bottom: 3px double #111111;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-classic-2 tfoot tr td {
+border: 0;
+}
+.lightable-classic-2 tfoot tr:first-child td {
+border-top: 3px double #111111;
+}
+.lightable-classic-2 caption {
+color: #222222;
+}
+.lightable-classic-2 td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic-2 th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic-2 tbody tr:last-child td {
+border-bottom: 3px double #111111;
+}
+.lightable-classic-2 thead tr:last-child th {
+border-bottom: 1px solid #111111;
+}
+.lightable-classic-2.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #EEE;
+border-collapse: collapse;
+margin-bottom: 10px;
+}
+.lightable-material tfoot tr td {
+border: 0;
+}
+.lightable-material tfoot tr:first-child td {
+border-top: 1px solid #EEE;
+}
+.lightable-material th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+}
+.lightable-material td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+border-top: 1px solid #eeeeee;
+}
+.lightable-material.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #ddd;
+}
+.lightable-material-dark {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #FFFFFF12;
+border-collapse: collapse;
+margin-bottom: 10px;
+background-color: #363640;
+}
+.lightable-material-dark tfoot tr td {
+border: 0;
+}
+.lightable-material-dark tfoot tr:first-child td {
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF60;
+}
+.lightable-material-dark td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF;
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark.lightable-hover tbody tr:hover {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material-dark.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #FFFFFF12;
+}
+.lightable-paper {
+width: 100%;
+margin-bottom: 10px;
+color: #444;
+}
+.lightable-paper tfoot tr td {
+border: 0;
+}
+.lightable-paper tfoot tr:first-child td {
+border-top: 1px solid #00000020;
+}
+.lightable-paper thead tr:last-child th {
+color: #666;
+vertical-align: bottom;
+border-bottom: 1px solid #00000020;
+line-height: 1.15em;
+padding: 10px 5px;
+}
+.lightable-paper td {
+vertical-align: middle;
+border-bottom: 1px solid #00000010;
+line-height: 1.15em;
+padding: 7px 5px;
+}
+.lightable-paper.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-paper.lightable-striped tbody tr:nth-child(even) {
+background-color: #00000008;
+}
+.lightable-paper.lightable-striped tbody td {
+border: 0;
+}
+</style>
 
 <style type="text/css">
 code{white-space: pre-wrap;}
@@ -340,21 +564,18 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Introduction to Fluxtools</h1>
 <h4 class="author">Kesondra Key</h4>
-<h4 class="date">2025-07-20</h4>
+<h4 class="date">2025-08-21</h4>
 
 
 
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(fluxtools)</span></code></pre></div>
-<pre><code>## Welcome to fluxtools!</code></pre>
-<pre><code>## Version: 0.4.0</code></pre>
+<pre><code>## Welcome to fluxtools V0.5.0</code></pre>
 <pre><code>## 
-## To start the app, use: run_flux_qaqc(offset), where `offset` is your UTC time offset</code></pre>
-<pre><code>## Example: 
-## run_flux_qaqc(-5) #for Eastern Time (UTC-5)</code></pre>
-<pre><code>## To view all vignettes: 
-## browseVignettes(&#39;fluxtools&#39;)</code></pre>
-<pre><code>## To view the citation: 
-## citation(&#39;fluxtools&#39;)</code></pre>
+## To start the app: run_fluxtools()</code></pre>
+<pre><code>## To apply Physical Range Module (PRM) filters: use apply_prm()</code></pre>
+<pre><code>## 
+## For additional help: see ?run_fluxtools, ?apply_prm, browseVignettes(&#39;fluxtools&#39;)</code></pre>
+<pre><code>## To view citation: citation(&#39;fluxtools&#39;)</code></pre>
 <div id="overview" class="section level1">
 <h1>Overview</h1>
 <p><strong>fluxtools</strong> is an R package that provides an
@@ -383,20 +604,20 @@ workflow.</p>
 <h1>Installation</h1>
 <p>You can install <strong>fluxtools</strong> from CRAN, or directly
 from GitHub:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="co"># Install from CRAN </span></span>
-<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;fluxtools&quot;</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="co"># Install from GitHub</span></span>
-<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="fu">library</span>(devtools) </span>
-<span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;kesondrakey/fluxtools&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="co"># Install from CRAN </span></span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;fluxtools&quot;</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="co"># Install from GitHub</span></span>
+<span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="fu">library</span>(devtools) </span>
+<span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;kesondrakey/fluxtools&quot;</span>)</span></code></pre></div>
 </div>
 <div id="launching-the-shiny-app" class="section level1">
 <h1>Launching the Shiny App</h1>
 <p>Load <strong>fluxtools</strong> and launch the QA/QC application:</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">library</span>(fluxtools)</span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="co"># Add the UTC offset for your flux tower site (e.g., UTC-5 for EST)</span></span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="fu">run_flux_qaqc</span>(<span class="sc">-</span><span class="dv">5</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">library</span>(fluxtools)</span>
+<span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a></span>
+<span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="co"># Run the app</span></span>
+<span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="fu">run_fluxtools</span>()</span></code></pre></div>
 <p>Example workflow</p>
 <ol style="list-style-type: decimal">
 <li><p><strong>Upload</strong>: Select your AmeriFlux-style CSV (e.g.,
@@ -411,15 +632,15 @@ interest (e.g., <code>FC_1_1_1</code>). The generated R code focuses on
 removing the y-axis variable</p></li>
 <li><p><strong>Select data</strong>: Use the box or lasso to select
 points. This populates the “Current” code box with something like:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>    <span class="at">FC_1_1_1 =</span> <span class="fu">case_when</span>(</span>
-<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>      TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202401261830&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
-<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>      TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202401270530&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
-<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>      …</span>
-<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> FC_1_1_1</span>
-<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>    )</span>
-<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>  )</span></code></pre></div></li>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>    <span class="at">FC_1_1_1 =</span> <span class="fu">case_when</span>(</span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a>      TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202401261830&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a>      TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202401270530&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a>      …</span>
+<span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>      <span class="cn">TRUE</span> <span class="sc">~</span> FC_1_1_1</span>
+<span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>    )</span>
+<span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>  )</span></code></pre></div></li>
 <li><p><strong>Flag data and Accumulate code</strong>: With points still
 selected, click “Flag data.” Selected points turn orange, and code is
 appended to the “Accumulated” box, allowing multiple selections per
@@ -433,25 +654,25 @@ view.</p></li>
 (e.g., <code>SWC_1_1_1</code>) and select more points. Click “Flag data”
 Code for both variables to appear:</p></li>
 </ol>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
-<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>      <span class="at">FC_1_1_1 =</span> <span class="fu">case_when</span>(</span>
-<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>        TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202401261830&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
-<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>        TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202401270530&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
-<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a>        …</span>
-<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> FC_1_1_1</span>
-<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a>      )</span>
-<span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a>    )</span>
-<span id="cb11-10"><a href="#cb11-10" tabindex="-1"></a></span>
-<span id="cb11-11"><a href="#cb11-11" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
-<span id="cb11-12"><a href="#cb11-12" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
-<span id="cb11-13"><a href="#cb11-13" tabindex="-1"></a>      <span class="at">SWC_1_1_1 =</span> <span class="fu">case_when</span>(</span>
-<span id="cb11-14"><a href="#cb11-14" tabindex="-1"></a>        TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202403261130&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
-<span id="cb11-15"><a href="#cb11-15" tabindex="-1"></a>        TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202403270800&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
-<span id="cb11-16"><a href="#cb11-16" tabindex="-1"></a>        …</span>
-<span id="cb11-17"><a href="#cb11-17" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> SWC_1_1_1</span>
-<span id="cb11-18"><a href="#cb11-18" tabindex="-1"></a>      )</span>
-<span id="cb11-19"><a href="#cb11-19" tabindex="-1"></a>    )</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>      <span class="at">FC_1_1_1 =</span> <span class="fu">case_when</span>(</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a>        TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202401261830&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
+<span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>        TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202401270530&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>        …</span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> FC_1_1_1</span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>      )</span>
+<span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a>    )</span>
+<span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a></span>
+<span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a>  df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
+<span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a>    <span class="fu">mutate</span>(</span>
+<span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a>      <span class="at">SWC_1_1_1 =</span> <span class="fu">case_when</span>(</span>
+<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>        TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202403261130&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
+<span id="cb10-15"><a href="#cb10-15" tabindex="-1"></a>        TIMESTAMP_START <span class="sc">==</span> <span class="st">&#39;202403270800&#39;</span> <span class="sc">~</span> <span class="cn">NA_real_</span>,</span>
+<span id="cb10-16"><a href="#cb10-16" tabindex="-1"></a>        …</span>
+<span id="cb10-17"><a href="#cb10-17" tabindex="-1"></a>        <span class="cn">TRUE</span> <span class="sc">~</span> SWC_1_1_1</span>
+<span id="cb10-18"><a href="#cb10-18" tabindex="-1"></a>      )</span>
+<span id="cb10-19"><a href="#cb10-19" tabindex="-1"></a>    )</span></code></pre></div>
 <ol start="9" style="list-style-type: decimal">
 <li><p><strong>Compare variables</strong>: Change to variables you would
 like to compare (e.g., change y to <code>TA_1_1_1</code> and x to
@@ -480,10 +701,1799 @@ containing your .csv, reflecting changes from using the “apply removals”
 button, and includes a compiled R script with the R code for those
 removals.</p></li>
 </ol>
+</div>
+<div id="physical-boundary-module-prm-function" class="section level1">
+<h1>Physical Boundary Module (PRM) function:</h1>
+<p>The <strong>Physical Range Module (PRM)</strong> removes out-of-range
+values to <code>NA</code> based on similar <strong>variables</strong>
+using patterns like <code>^SWC($|_)</code> or
+<code>^P($|_)</code>.<br />
+Columns containing <code>&quot;QC&quot;</code> are skipped by default. No columns
+are removed.</p>
+<p>Source of ranges: <em>AmeriFlux Technical Documents, Table A1
+(Physical Range Module)</em>.</p>
+<div id="quick-start" class="section level2">
+<h2>Quick start</h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="co"># tiny demo dataset with a few out-of-range values</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">1</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>df <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(</span>
+<span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a>  <span class="at">TIMESTAMP_START =</span> <span class="fu">seq.POSIXt</span>(<span class="fu">as.POSIXct</span>(<span class="st">&quot;2024-01-01&quot;</span>, <span class="at">tz =</span> <span class="st">&quot;UTC&quot;</span>),</span>
+<span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a>                               <span class="at">length.out =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="st">&quot;30 min&quot;</span>),</span>
+<span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a>  <span class="at">SWC_1_1_1 =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">150</span>, <span class="cn">NA</span>, <span class="fl">0.5</span>, <span class="dv">99</span>, <span class="dv">101</span>, <span class="dv">50</span>, <span class="dv">80</span>, <span class="sc">-</span><span class="dv">3</span>),  <span class="co"># bad: 150, 101, -3; 0.5 triggers SWC unit note</span></span>
+<span id="cb11-7"><a href="#cb11-7" tabindex="-1"></a>  <span class="at">P         =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">10</span>, <span class="dv">60</span>, <span class="cn">NA</span>, <span class="dv">51</span>, <span class="dv">3</span>, <span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">100</span>, <span class="sc">-</span><span class="dv">1</span>),        <span class="co"># bad: 60, 51, 100, -1</span></span>
+<span id="cb11-8"><a href="#cb11-8" tabindex="-1"></a>  <span class="at">RH_1_1_1  =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">110</span>, <span class="dv">50</span>, <span class="cn">NA</span>, <span class="dv">0</span>, <span class="dv">100</span>, <span class="sc">-</span><span class="dv">5</span>, <span class="dv">101</span>, <span class="dv">75</span>, <span class="dv">30</span>),   <span class="co"># bad: 110, -5, 101</span></span>
+<span id="cb11-9"><a href="#cb11-9" tabindex="-1"></a>  <span class="at">SWC_QC    =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">2</span>, <span class="dv">10</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)                <span class="co"># QC col should be ignored</span></span>
+<span id="cb11-10"><a href="#cb11-10" tabindex="-1"></a>)</span>
+<span id="cb11-11"><a href="#cb11-11" tabindex="-1"></a></span>
+<span id="cb11-12"><a href="#cb11-12" tabindex="-1"></a><span class="co"># To see the Physical Boundary Module (PRM) rules:</span></span>
+<span id="cb11-13"><a href="#cb11-13" tabindex="-1"></a><span class="fu">get_prm_rules</span>()</span></code></pre></div>
+<pre><code>## # A tibble: 113 × 6
+##    family           variable     min   max description                     units
+##    &lt;chr&gt;            &lt;chr&gt;      &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;                           &lt;chr&gt;
+##  1 ^COND_WATER($|_) COND_WATER     0 10000 Conductivity of water           uS c…
+##  2 ^DO($|_)         DO             0    NA Dissolved oxygen in water       umol…
+##  3 ^PCH4($|_)       PCH4           0    NA Dissolved methane (CH4) in wat… nmol…
+##  4 ^PCO2($|_)       PCO2           0 10000 Dissolved carbon dioxide (CO2)… umol…
+##  5 ^PN2O($|_)       PN2O           0    NA Dissolved nitrous oxide (N2O) … nmol…
+##  6 ^PPFD_UW_IN($|_) PPFD_UW_IN     0  2400 Photosynthetic photon flux den… umol…
+##  7 ^TW($|_)         TW           -20    50 Water temperature               deg C
+##  8 ^DBH($|_)        DBH            0   500 Tree diameter at breast height  cm   
+##  9 ^LEAF_WET($|_)   LEAF_WET       0   100 Leaf wetness (0-100)            %    
+## 10 ^SAP_DT($|_)     SAP_DT       -10    10 Sapflow probe temperature diff… deg C
+## # ℹ 103 more rows</code></pre>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="co">#Apply filter to all relevant variables</span></span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">apply_prm</span>(df)</span></code></pre></div>
+<pre><code>## PRM summary:
+## * P
+##   expected units: mm, PRM range: 0 to 50
+##   4 values set to NA (44.4% of data)
+## * RH_1_1_1
+##   expected units: %, PRM range: 0 to 100
+##   3 values set to NA (33.3% of data)
+## * SWC_1_1_1
+##   expected units: %, PRM range: 0 to 100
+##   3 values set to NA (33.3% of data)</code></pre>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="co"># PRM summary (counts and % replaced per column)</span></span>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>res<span class="sc">$</span>summary</span></code></pre></div>
+<pre><code>## # A tibble: 3 × 7
+##   column    family   min   max n_non_na_before n_replaced pct_replaced
+##   &lt;chr&gt;     &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;           &lt;int&gt;      &lt;int&gt;        &lt;dbl&gt;
+## 1 P         P          0    50               9          4         44.4
+## 2 RH_1_1_1  RH         0   100               9          3         33.3
+## 3 SWC_1_1_1 SWC        0   100               9          3         33.3</code></pre>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="co"># Only set range for SWC </span></span>
+<span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>df_filtered_swc <span class="ot">&lt;-</span> <span class="fu">apply_prm</span>(df, <span class="at">include =</span> <span class="st">&quot;SWC&quot;</span>)</span></code></pre></div>
+<pre><code>## PRM summary:
+## * SWC_1_1_1
+##   expected units: %, PRM range: 0 to 100
+##   3 values set to NA (33.3% of data)</code></pre>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" tabindex="-1"></a><span class="co"># Only set range for SWC + P </span></span>
+<span id="cb19-2"><a href="#cb19-2" tabindex="-1"></a>df_filtered_swc_P <span class="ot">&lt;-</span> <span class="fu">apply_prm</span>(df, <span class="at">include =</span> <span class="fu">c</span>(<span class="st">&quot;SWC&quot;</span>, <span class="st">&quot;P&quot;</span>))</span></code></pre></div>
+<pre><code>## PRM summary:
+## * P
+##   expected units: mm, PRM range: 0 to 50
+##   4 values set to NA (44.4% of data)
+## * SWC_1_1_1
+##   expected units: %, PRM range: 0 to 100
+##   3 values set to NA (33.3% of data)</code></pre>
+</div>
+<div id="physical-range-module-values" class="section level2">
+<h2>Physical Range Module Values</h2>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+family
+</th>
+<th style="text-align:left;">
+variable
+</th>
+<th style="text-align:right;">
+min
+</th>
+<th style="text-align:right;">
+max
+</th>
+<th style="text-align:left;">
+description
+</th>
+<th style="text-align:left;">
+units
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+^COND_WATER(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; COND_WATER &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 10000 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Conductivity of water
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; uS cm^-1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^DO(\)</span>|_)
+</td>
+<td style="text-align:left;">
+DO
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+Dissolved oxygen in water
+</td>
+<td style="text-align:left;">
+umol L^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^PCH4(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PCH4 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; NA &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Dissolved methane (CH4)
+in water &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nmolCH4 mol^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^PCO2(\)</span>|_)
+</td>
+<td style="text-align:left;">
+PCO2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10000
+</td>
+<td style="text-align:left;">
+Dissolved carbon dioxide (CO2) in water
+</td>
+<td style="text-align:left;">
+umolCO2 mol^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^PN2O(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PN2O &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; NA &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Dissolved nitrous oxide
+(N2O) in water &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nmolN2O mol^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^PPFD_UW_IN(\)</span>|_)
+</td>
+<td style="text-align:left;">
+PPFD_UW_IN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2400
+</td>
+<td style="text-align:left;">
+Photosynthetic photon flux density, underwater, incoming
+</td>
+<td style="text-align:left;">
+umolPhotons m^-2 s^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^TW(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; TW &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -20 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 50 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Water temperature
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; deg C &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^DBH(\)</span>|_)
+</td>
+<td style="text-align:left;">
+DBH
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+500
+</td>
+<td style="text-align:left;">
+Tree diameter at breast height
+</td>
+<td style="text-align:left;">
+cm
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^LEAF_WET(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; LEAF_WET &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Leaf wetness (0-100)
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; % &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^SAP_DT(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SAP_DT
+</td>
+<td style="text-align:right;">
+-10
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Sapflow probe temperature difference
+</td>
+<td style="text-align:left;">
+deg C
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^T_BOLE(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; T_BOLE &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -50 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 70 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Bole temperature
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; deg C &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^T_CANOPY(\)</span>|_)
+</td>
+<td style="text-align:left;">
+T_CANOPY
+</td>
+<td style="text-align:right;">
+-50
+</td>
+<td style="text-align:right;">
+70
+</td>
+<td style="text-align:left;">
+Canopy/surface temperature
+</td>
+<td style="text-align:left;">
+deg C
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^CH4(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; CH4 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 15000 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Methane (CH4) mole
+fraction (wet air) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nmolCH4 mol^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^CH4_MIXING_RATIO(\)</span>|_)
+</td>
+<td style="text-align:left;">
+CH4_MIXING_RATIO
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+15000
+</td>
+<td style="text-align:left;">
+Methane (CH4) mole fraction (dry air)
+</td>
+<td style="text-align:left;">
+nmolCH4 mol^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^CO(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; CO &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; NA &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Carbon monoxide (CO)
+mole fraction (wet air) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nmolCO mol^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^CO2(\)</span>|_)
+</td>
+<td style="text-align:left;">
+CO2
+</td>
+<td style="text-align:right;">
+150
+</td>
+<td style="text-align:right;">
+1200
+</td>
+<td style="text-align:left;">
+Carbon dioxide (CO2) mole fraction (wet air)
+</td>
+<td style="text-align:left;">
+umolCO2 mol^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^CO2_SIGMA(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; CO2_SIGMA &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 150 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Std. dev. of CO2 mole
+fraction (wet air) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; umolCO2 mol^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^CO2C13(\)</span>|_)
+</td>
+<td style="text-align:left;">
+CO2C13
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:right;">
+-6
+</td>
+<td style="text-align:left;">
+Stable isotope delta13C of CO2 (permil)
+</td>
+<td style="text-align:left;">
+permil
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^FC(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; FC &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; CO2 turbulent flux (no
+storage correction) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; umolCO2 m^-2 s^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^FCH4(\)</span>|_)
+</td>
+<td style="text-align:left;">
+FCH4
+</td>
+<td style="text-align:right;">
+-500
+</td>
+<td style="text-align:right;">
+4000
+</td>
+<td style="text-align:left;">
+CH4 turbulent flux (no storage correction)
+</td>
+<td style="text-align:left;">
+nmolCH4 m^-2 s^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^H2O(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; H2O &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Water vapor in mole
+fraction (wet air) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; mmolH2O mol^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^H2O_MIXING_RATIO(\)</span>|_)
+</td>
+<td style="text-align:left;">
+H2O_MIXING_RATIO
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:left;">
+Water vapor in mole fraction (dry air)
+</td>
+<td style="text-align:left;">
+mmolH2O mol^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^H2O_SIGMA(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; H2O_SIGMA &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 15 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Std. dev. of water
+vapor mole fraction &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; mmolH2O mol^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^N2O(\)</span>|_)
+</td>
+<td style="text-align:left;">
+N2O
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+N2O mole fraction (wet air)
+</td>
+<td style="text-align:left;">
+nmolN2O mol^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^N2O_MIXING_RATIO(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; N2O_MIXING_RATIO
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; NA &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; N2O mole fraction (dry
+air) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nmolN2O mol^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^NO(\)</span>|_)
+</td>
+<td style="text-align:left;">
+NO
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+NO mole fraction (wet air)
+</td>
+<td style="text-align:left;">
+nmolNO mol^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^NO2(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; NO2 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; NA &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; NO2 mole fraction (wet
+air) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nmolNO2 mol^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^O3(\)</span>|_)
+</td>
+<td style="text-align:left;">
+O3
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+O3 mole fraction (wet air)
+</td>
+<td style="text-align:left;">
+nmolO3 mol^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SC(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SC &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; CO2 storage flux
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; umolCO2 m^-2 s^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^SO2(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SO2
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+NA
+</td>
+<td style="text-align:left;">
+SO2 mole fraction (wet air)
+</td>
+<td style="text-align:left;">
+nmolSO2 mol^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^FH2O(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; FH2O &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -10 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 20 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Water vapor (H2O)
+turbulent flux (no storage correction) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; mmolH2O m^-2 s^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^G(\)</span>|_)
+</td>
+<td style="text-align:left;">
+G
+</td>
+<td style="text-align:right;">
+-250
+</td>
+<td style="text-align:right;">
+400
+</td>
+<td style="text-align:left;">
+Soil heat flux
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^H(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; H &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -450 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 900 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Sensible heat flux (no
+storage correction) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^LE(\)</span>|_)
+</td>
+<td style="text-align:left;">
+LE
+</td>
+<td style="text-align:right;">
+-450
+</td>
+<td style="text-align:right;">
+900
+</td>
+<td style="text-align:left;">
+Latent heat flux (no storage correction)
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SG(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SG &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 250 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Soil heat storage flux
+above plates &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^SH(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SH
+</td>
+<td style="text-align:right;">
+-150
+</td>
+<td style="text-align:right;">
+150
+</td>
+<td style="text-align:left;">
+Sensible heat storage flux
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SLE(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SLE &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -150 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 150 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Latent heat storage
+flux &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^PA(\)</span>|_)
+</td>
+<td style="text-align:left;">
+PA
+</td>
+<td style="text-align:right;">
+60
+</td>
+<td style="text-align:right;">
+105
+</td>
+<td style="text-align:left;">
+Atmospheric pressure
+</td>
+<td style="text-align:left;">
+kPa
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^PBLH(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PBLH &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 3000 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Planetary boundary
+layer height &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; m &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^RH(\)</span>|_)
+</td>
+<td style="text-align:left;">
+RH
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:left;">
+Relative humidity (0-100)
+</td>
+<td style="text-align:left;">
+%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^T_SONIC(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; T_SONIC &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -50 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 50 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Sonic temperature
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; deg C &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^T_SONIC_SIGMA(\)</span>|_)
+</td>
+<td style="text-align:left;">
+T_SONIC_SIGMA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+Std. dev. of sonic temperature
+</td>
+<td style="text-align:left;">
+deg C
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^TA(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; TA &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -50 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 50 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Air temperature
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; deg C &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^VPD(\)</span>|_)
+</td>
+<td style="text-align:left;">
+VPD
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+80
+</td>
+<td style="text-align:left;">
+Vapor pressure deficit
+</td>
+<td style="text-align:left;">
+hPa
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^D_SNOW(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; D_SNOW &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 500 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Snow depth &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; cm &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^P(\)</span>|_)
+</td>
+<td style="text-align:left;">
+P
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:left;">
+Precipitation
+</td>
+<td style="text-align:left;">
+mm
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^P_RAIN(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; P_RAIN &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 50 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Rainfall &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; mm &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^P_SNOW(\)</span>|_)
+</td>
+<td style="text-align:left;">
+P_SNOW
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:left;">
+Snowfall
+</td>
+<td style="text-align:left;">
+mm
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^RUNOFF(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; RUNOFF &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 200 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Runoff &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; mm &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^STEMFLOW(\)</span>|_)
+</td>
+<td style="text-align:left;">
+STEMFLOW
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+200
+</td>
+<td style="text-align:left;">
+Stemflow
+</td>
+<td style="text-align:left;">
+mm
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^THROUGHFALL(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; THROUGHFALL &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 20 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Throughfall &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; mm &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^ALB(\)</span>|_)
+</td>
+<td style="text-align:left;">
+ALB
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:left;">
+Albedo (0-100)
+</td>
+<td style="text-align:left;">
+%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^APAR(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; APAR &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2300 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Absorbed PAR
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; umolPhoton m^-2 s^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^EVI(\)</span>|_)
+</td>
+<td style="text-align:left;">
+EVI
+</td>
+<td style="text-align:right;">
+-1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Enhanced Vegetation Index
+</td>
+<td style="text-align:left;">
+nondimensional
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^FAPAR(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; FAPAR &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Fraction of absorbed
+PAR (0-100) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; % &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^FIPAR(\)</span>|_)
+</td>
+<td style="text-align:left;">
+FIPAR
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:left;">
+Fraction of intercepted PAR (0-100)
+</td>
+<td style="text-align:left;">
+%
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^LW_BC_IN(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; LW_BC_IN &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 50 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 600 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Longwave radiation,
+below canopy incoming &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^LW_BC_OUT(\)</span>|_)
+</td>
+<td style="text-align:left;">
+LW_BC_OUT
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+750
+</td>
+<td style="text-align:left;">
+Longwave radiation, below canopy outgoing
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^LW_IN(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; LW_IN &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 50 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 600 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Longwave radiation,
+incoming &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^LW_OUT(\)</span>|_)
+</td>
+<td style="text-align:left;">
+LW_OUT
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:right;">
+750
+</td>
+<td style="text-align:left;">
+Longwave radiation, outgoing
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^MCRI(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; MCRI &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 10 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Carotenoid Reflectance
+Index &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nondimensional
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^MTCI(\)</span>|_)
+</td>
+<td style="text-align:left;">
+MTCI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+MERIS Terrestrial Chlorophyll Index
+</td>
+<td style="text-align:left;">
+nondimensional
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^NDVI(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; NDVI &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -1 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 1 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Normalized Difference
+Vegetation Index &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nondimensional
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^NETRAD(\)</span>|_)
+</td>
+<td style="text-align:left;">
+NETRAD
+</td>
+<td style="text-align:right;">
+-200
+</td>
+<td style="text-align:right;">
+1100
+</td>
+<td style="text-align:left;">
+Net radiation
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^NIRV(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; NIRV &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Near Infrared
+Vegetation Index &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 sr^-1 nm^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^PPFD_BC_IN(\)</span>|_)
+</td>
+<td style="text-align:left;">
+PPFD_BC_IN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2400
+</td>
+<td style="text-align:left;">
+PPFD, below canopy incoming
+</td>
+<td style="text-align:left;">
+umolPhoton m^-2 s^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^PPFD_BC_OUT(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PPFD_BC_OUT &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2000 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PPFD, below canopy
+outgoing &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; umolPhoton m^-2 s^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^PPFD_DIF(\)</span>|_)
+</td>
+<td style="text-align:left;">
+PPFD_DIF
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1400
+</td>
+<td style="text-align:left;">
+PPFD, diffuse incoming
+</td>
+<td style="text-align:left;">
+umolPhoton m^-2 s^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^PPFD_DIR(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PPFD_DIR &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2400 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PPFD, direct incoming
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; umolPhoton m^-2 s^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^PPFD_IN(\)</span>|_)
+</td>
+<td style="text-align:left;">
+PPFD_IN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2400
+</td>
+<td style="text-align:left;">
+PPFD, incoming
+</td>
+<td style="text-align:left;">
+umolPhoton m^-2 s^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^PPFD_OUT(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PPFD_OUT &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2000 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PPFD, outgoing
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; umolPhoton m^-2 s^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^PRI(\)</span>|_)
+</td>
+<td style="text-align:left;">
+PRI
+</td>
+<td style="text-align:right;">
+-1
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Photochemical Reflectance Index
+</td>
+<td style="text-align:left;">
+nondimensional
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^R_UVA(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; R_UVA &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 85 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; UVA radiation, incoming
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^R_UVB(\)</span>|_)
+</td>
+<td style="text-align:left;">
+R_UVB
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+20
+</td>
+<td style="text-align:left;">
+UVB radiation, incoming
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^REDCI(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; REDCI &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 10 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Red-Edge Chlorophyll
+Index &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nondimensional
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^REP(\)</span>|_)
+</td>
+<td style="text-align:left;">
+REP
+</td>
+<td style="text-align:right;">
+400
+</td>
+<td style="text-align:right;">
+800
+</td>
+<td style="text-align:left;">
+Red-Edge Position
+</td>
+<td style="text-align:left;">
+nm
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SPEC_NIR_IN(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SPEC_NIR_IN &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; NIR band radiation,
+incoming (hemispherical) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 nm^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^SPEC_NIR_OUT(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SPEC_NIR_OUT
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+NIR band radiation, outgoing
+</td>
+<td style="text-align:left;">
+W m^-2 sr^-1 nm^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SPEC_NIR_REFL(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SPEC_NIR_REFL
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 1 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; NIR band reflectance
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nondimensional
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^SPEC_PRI_REF_IN(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SPEC_PRI_REF_IN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+PRI reference band radiation, incoming
+</td>
+<td style="text-align:left;">
+W m^-2 nm^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SPEC_PRI_REF_OUT(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SPEC_PRI_REF_OUT
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PRI reference band
+radiation, outgoing &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 sr^-1 nm^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^SPEC_PRI_REF_REFL(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SPEC_PRI_REF_REFL
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+PRI reference band reflectance
+</td>
+<td style="text-align:left;">
+nondimensional
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SPEC_PRI_TGT_IN(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SPEC_PRI_TGT_IN
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PRI target band
+radiation, incoming &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 nm^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^SPEC_PRI_TGT_OUT(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SPEC_PRI_TGT_OUT
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+PRI target band radiation, outgoing
+</td>
+<td style="text-align:left;">
+W m^-2 sr^-1 nm^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SPEC_PRI_TGT_REFL(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SPEC_PRI_TGT_REFL
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 1 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; PRI target band
+reflectance &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nondimensional
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^SPEC_RED_IN(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SPEC_RED_IN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+Red band radiation, incoming (hemispherical)
+</td>
+<td style="text-align:left;">
+W m^-2 nm^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SPEC_RED_OUT(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SPEC_RED_OUT
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 2 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Red band radiation,
+outgoing &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 sr^-1 nm^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt;
+^SPEC_RED_REFL(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SPEC_RED_REFL
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1
+</td>
+<td style="text-align:left;">
+Red band reflectance
+</td>
+<td style="text-align:left;">
+nondimensional
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SR(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SR &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 10 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Simple Ratio
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; nondimensional
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^SW_BC_IN(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SW_BC_IN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1300
+</td>
+<td style="text-align:left;">
+Shortwave radiation, below canopy incoming
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SW_BC_OUT(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SW_BC_OUT &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 800 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Shortwave radiation,
+below canopy outgoing &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^SW_DIF(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SW_DIF
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+750
+</td>
+<td style="text-align:left;">
+Shortwave radiation, diffuse incoming
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SW_DIR(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SW_DIR &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 1300 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Shortwave radiation,
+direct incoming &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^SW_IN(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SW_IN
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+1300
+</td>
+<td style="text-align:left;">
+Shortwave radiation, incoming
+</td>
+<td style="text-align:left;">
+W m^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SW_OUT(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SW_OUT &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 800 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Shortwave radiation,
+outgoing &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; W m^-2 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^TCARI(\)</span>|_)
+</td>
+<td style="text-align:left;">
+TCARI
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:left;">
+Transformed Chlorophyll Absorption in Reflectance Index
+</td>
+<td style="text-align:left;">
+nondimensional
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^SWC(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; SWC &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Soil water content
+(volumetric, 0-100) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; % &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^SWP(\)</span>|_)
+</td>
+<td style="text-align:left;">
+SWP
+</td>
+<td style="text-align:right;">
+-750
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:left;">
+Soil water potential
+</td>
+<td style="text-align:left;">
+kPa
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^TS(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; TS &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -40 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 65 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Soil temperature
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; deg C &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^TSN(\)</span>|_)
+</td>
+<td style="text-align:left;">
+TSN
+</td>
+<td style="text-align:right;">
+-40
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:left;">
+Snow temperature
+</td>
+<td style="text-align:left;">
+deg C
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^WTD(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; WTD &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -10 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 10 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Water table depth
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; m &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^TAU(\)</span>|_)
+</td>
+<td style="text-align:left;">
+TAU
+</td>
+<td style="text-align:right;">
+-10
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:left;">
+Momentum flux
+</td>
+<td style="text-align:left;">
+kg m^-1 s^-2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^U_SIGMA(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; U_SIGMA &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 12 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Std. dev. of along-wind
+velocity &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; m s^-1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^USTAR(\)</span>|_)
+</td>
+<td style="text-align:left;">
+USTAR
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:left;">
+Friction velocity
+</td>
+<td style="text-align:left;">
+m s^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^V_SIGMA(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; V_SIGMA &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 10 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Std. dev. of cross-wind
+velocity &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; m s^-1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^W_SIGMA(\)</span>|_)
+</td>
+<td style="text-align:left;">
+W_SIGMA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:left;">
+Std. dev. of vertical velocity
+</td>
+<td style="text-align:left;">
+m s^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^WD(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; WD &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 360 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Wind direction
+&lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; degree &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^WD_SIGMA(\)</span>|_)
+</td>
+<td style="text-align:left;">
+WD_SIGMA
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+180
+</td>
+<td style="text-align:left;">
+Std. dev. of wind direction
+</td>
+<td style="text-align:left;">
+degree
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^WS(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; WS &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 0 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 40 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Wind speed &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; m s^-1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^WS_MAX(\)</span>|_)
+</td>
+<td style="text-align:left;">
+WS_MAX
+</td>
+<td style="text-align:right;">
+0
+</td>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:left;">
+Max wind speed in averaging period
+</td>
+<td style="text-align:left;">
+m s^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^GPP(<span class="math inline">\(|_) &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; GPP &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; -30 &lt;/td&gt;
+   &lt;td style=&quot;text-align:right;&quot;&gt; 100 &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; Gross primary
+productivity &lt;/td&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; umolCO2 m^-2 s^-1
+&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style=&quot;text-align:left;&quot;&gt; ^NEE(\)</span>|_)
+</td>
+<td style="text-align:left;">
+NEE
+</td>
+<td style="text-align:right;">
+-100
+</td>
+<td style="text-align:right;">
+100
+</td>
+<td style="text-align:left;">
+Net ecosystem exchange
+</td>
+<td style="text-align:left;">
+umolCO2 m^-2 s^-1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+^RECO($|_)
+</td>
+<td style="text-align:left;">
+RECO
+</td>
+<td style="text-align:right;">
+-20
+</td>
+<td style="text-align:right;">
+50
+</td>
+<td style="text-align:left;">
+Ecosystem respiration
+</td>
+<td style="text-align:left;">
+umolCO2 m^-2 s^-1
+</td>
+</tr>
+</tbody>
+</table>
 <p><em>Fluxtools is an independent project and is not affiliated with or
 endorsed by the AmeriFlux Network. “AmeriFlux” is a registered trademark
 of Lawrence Berkeley National Laboratory and is used here for
 identification purposes only.</em></p>
+</div>
 </div>
 
 
