@@ -1,7 +1,7 @@
 Type: Package
 Package: fluxtools
 Title: A 'shiny' App for Reproducible QA/QC of Eddy Covariance Data
-Version: 0.5.0
+Version: 0.6.0
 Authors@R: 
     person("Kesondra", "Key", , "keyke@iu.edu", role = c("aut", "cre"))
 Description: An interactive 'shiny'-based tool for exploration and quality
@@ -16,14 +16,15 @@ URL: https://github.com/kesondrakey/fluxtools,
 BugReports: https://github.com/kesondrakey/fluxtools/issues
 Depends: R (>= 4.1.0)
 Imports: dplyr, plotly, shiny, tibble
-Suggests: kableExtra, knitr, rmarkdown, testthat (>= 3.0.0)
+Suggests: kableExtra, knitr, rmarkdown, shinyWidgets, testthat (>=
+        3.0.0)
 VignetteBuilder: knitr
 BuildVignettes: TRUE
 Encoding: UTF-8
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-08-21 21:18:13 UTC; keyke
+Packaged: 2025-08-27 22:53:48 UTC; Karmic Dreamwork
 Author: Kesondra Key [aut, cre]
 Maintainer: Kesondra Key <keyke@iu.edu>
 Repository: CRAN
-Date/Publication: 2025-08-21 21:32:12 UTC
+Date/Publication: 2025-08-27 23:10:02 UTC
