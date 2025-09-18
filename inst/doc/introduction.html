@@ -12,7 +12,7 @@
 
 <meta name="author" content="Kesondra Key" />
 
-<meta name="date" content="2025-08-28" />
+<meta name="date" content="2025-09-18" />
 
 <title>Introduction to Fluxtools</title>
 
@@ -50,8 +50,9 @@ overflow: visible;
 }
 </style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -62,7 +63,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
 { counter-reset: source-line 0; }
@@ -340,12 +341,12 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Introduction to Fluxtools</h1>
 <h4 class="author">Kesondra Key</h4>
-<h4 class="date">2025-08-28</h4>
+<h4 class="date">2025-09-18</h4>
 
 
 
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(fluxtools)</span></code></pre></div>
-<pre><code>## Welcome to fluxtools V0.6.2</code></pre>
+<pre><code>## Welcome to fluxtools V0.7.0</code></pre>
 <pre><code>## 
 ## To start the app: run_fluxtools()</code></pre>
 <pre><code>## To apply Physical Range Module (PRM) filters: use apply_prm()</code></pre>
@@ -360,20 +361,28 @@ the AmeriFlux BASE (or Fluxnet) format. In just a few clicks, you
 can:</p>
 <ol style="list-style-type: decimal">
 <li>Upload eddy covariance data in a .csv format (AmeriFlux standard
-naming and timestamp conventions)</li>
-<li>Visualize any two numeric columns against time (or each other)</li>
-<li>Highlight statistical outliers (±σ from a linear fit) and add them
-to your point-removal R code</li>
-<li>Manually select and remove data points via a lasso or box. Selecting
-these adds to the accumulated removal code</li>
-<li>Copy and paste the generated code into your own R script for
-reproducible QA/QC</li>
-<li>Download a “cleaned” CSV with excluded values (using “apply
-removals”) set to <code>NA</code> and an R script for
-reproducibility</li>
+naming and timestamp conventions; up to ~1 GB)</li>
+<li>Visualize any numeric variable against time (default:
+TIMESTAMP_START) or against another variable</li>
+<li>Detect outliers with the ±σ slider (residuals from a simple linear
+fit) and stage them for removal</li>
+<li>Manually flag points using box/lasso selection, time ranges, or
+custom min/max thresholds</li>
+<li>Overlay or compare: Plot multiple Y variables in the same dataset,
+or upload a second dataset (Dataset B) for side-by-side comparison with
+Dataset A</li>
+<li>Add smoothers (LOESS) with adjustable span and optional 95% CI;
+optionally show only smoothed line(s)</li>
+<li>Apply PRM (Physical Range Module) to automatically replace values
+outside published physical bounds</li>
+<li>Generate reproducible code: fluxtools builds dplyr code that sets
+flagged values to NA_real_. Copy current or accumulated snippets
+directly</li>
+<li>Download results: export a ZIP with cleaned CSV(s), replay scripts,
+and (if PRM applied) summary/audit files</li>
 </ol>
 <p>This vignette shows you how to install, launch, and use the main
-Shiny app—<code>run_flux_qaqc()</code>—and walks through a typical
+Shiny app—<code>run_fluxtools()</code>—and walks through a typical
 workflow.</p>
 <hr />
 </div>
@@ -396,7 +405,7 @@ from GitHub:</p>
 <span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a><span class="co"># Run the app</span></span>
 <span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="fu">run_fluxtools</span>()</span></code></pre></div>
 <p>Example workflow</p>
-<ol style="list-style-type: decimal">
+<ul>
 <li><p><strong>Upload</strong>: Select your AmeriFlux-style CSV (e.g.,
 <code>US_VT1_HH_202401010000_202501010000.csv</code>). Files can be up
 to 1GB (larger file sizes might be harder on the Shiny
@@ -407,10 +416,52 @@ but you can subset to specific years</p></li>
 is on the x-axis by default. Change the y-axis to your variable of
 interest (e.g., <code>FC_1_1_1</code>). The generated R code focuses on
 removing the y-axis variable</p></li>
+<li><p><strong>Compare Two Datasets</strong> Upload a second dataset
+(Dataset B) to compare against your primary upload (Dataset A).</p></li>
+<li><p>⚠️ <em>Note: Flagging and removals only apply to Dataset
+A</em></p></li>
+<li><p>You can assign custom labels for each dataset, which appear in
+the legend</p></li>
+<li><p>Choose custom colors per dataset</p></li>
+<li><p>All advanced options (smoothers, lines vs. points, opacity, etc.)
+work in comparison mode, except global themes and single-variable color
+overrides (which apply to Dataset A only)</p></li>
+<li><p><strong>Plot Multiple Variables (Overlay)</strong> Enable Plot
+multiple variables to overlay several Y variables from the same dataset
+in one plot</p></li>
+<li><p>Select variables in the Overlay variables menu.</p></li>
+<li><p>Use Include current Y-variable if you want the currently selected
+variable included automatically</p></li>
+<li><p>Colors are assigned from the active palette; you can override
+them manually in <em>Advanced Options</em></p></li>
+<li><p><strong>Advanced Options (Flag Style &amp;
+Markers)</strong></p></li>
+<li><p>Switch between scatter and line plots</p></li>
+<li><p>Adjust opacity and line width</p></li>
+<li><p>In single-variable mode, markers can be hollow circles for better
+visibility of flagged rings</p></li>
+<li><p><strong>Smoother Overlay</strong> Add a LOESS smoother to any
+plot:</p></li>
+<li><p>Adjustable span parameter to control curve smoothness</p></li>
+<li><p>Option to display a 95% confidence interval</p></li>
+<li><p>Toggle Show only smoothed line(s) to hide base scatter/lines and
+keep just the LOESS curves</p></li>
+<li><p><strong>Color Options</strong></p></li>
+<li><p>For single-variable or overlay mode, colors follow the chosen
+palette (Okabe–Ito, Tableau10, viridis, etc.) or manual
+overrides</p></li>
+<li><p>For dataset comparison, colors are set separately under the
+Compare two datasets menu</p></li>
+<li><p><strong>Time Subsetting</strong> Subset your dataset by year,
+month(s), day(s), or time of day</p></li>
+<li><p>Example: Select 06:00–18:00 to restrict analysis to daytime
+values</p></li>
+<li><p>Icons update dynamically: a ☀️ sun for daytime, 🌙 moon for
+nighttime</p></li>
 <li><p><strong>Select data</strong>: Use the box or lasso to select
 points. This populates the “Current” code box with something
 like:</p></li>
-</ol>
+</ul>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>   df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a>     <span class="fu">mutate</span>(</span>
 <span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a>       <span class="at">FC_1_1_1 =</span> <span class="fu">case_when</span>(</span>
@@ -420,7 +471,7 @@ like:</p></li>
 <span id="cb9-7"><a href="#cb9-7" tabindex="-1"></a>         <span class="cn">TRUE</span> <span class="sc">~</span> FC_1_1_1</span>
 <span id="cb9-8"><a href="#cb9-8" tabindex="-1"></a>       )</span>
 <span id="cb9-9"><a href="#cb9-9" tabindex="-1"></a>     )</span></code></pre></div>
-<ol start="5" style="list-style-type: decimal">
+<ul>
 <li><p><strong>Flag data and Accumulate code</strong>: With points still
 selected, click “Flag data.” Selected points turn orange, and code is
 appended to the “Accumulated” box, allowing multiple selections per
@@ -433,7 +484,7 @@ view.</p></li>
 <li><p><strong>Switch variables</strong>: Change y to any other variable
 (e.g., <code>SWC_1_1_1</code>) and select more points. Click “Flag data”
 Code for both variables to appear:</p></li>
-</ol>
+</ul>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a>   df <span class="ot">&lt;-</span> df <span class="sc">%&gt;%</span></span>
 <span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a>     <span class="fu">mutate</span>(</span>
 <span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a>       <span class="at">FC_1_1_1 =</span> <span class="fu">case_when</span>(</span>
@@ -453,7 +504,7 @@ Code for both variables to appear:</p></li>
 <span id="cb10-17"><a href="#cb10-17" tabindex="-1"></a>         <span class="cn">TRUE</span> <span class="sc">~</span> SWC_1_1_1</span>
 <span id="cb10-18"><a href="#cb10-18" tabindex="-1"></a>       )</span>
 <span id="cb10-19"><a href="#cb10-19" tabindex="-1"></a>     )</span></code></pre></div>
-<ol start="9" style="list-style-type: decimal">
+<ul>
 <li><p><strong>Compare variables</strong>: Change to variables you would
 like to compare (e.g., change y to <code>TA_1_1_1</code> and x to
 <code>T_SONIC_1_1_1</code>). The app computes an R² via simple linear
@@ -477,21 +528,16 @@ fresh start? Click Reload original data to reload the .csv from above to
 start over</p></li>
 <li><p><strong>Export cleaned data</strong>: Download a ZIP
 containing:</p></li>
-</ol>
-<ul>
-<li>A cleaned CSV (with applied NAs)</li>
-<li>An R script that reproduces your removals</li>
-<li>Optional PRM summary when used (see below)</li>
-</ul>
-</div>
-<div id="physical-boundary-module-prm-function" class="section level1">
-<h1>Physical Boundary Module (PRM) function:</h1>
-<p>The <strong>Physical Range Module (PRM)</strong> removes out-of-range
-values to <code>NA</code> based on similar <strong>variables</strong>
-using patterns like <code>^SWC($|_)</code> or
-<code>^P($|_)</code>.<br />
+<li><p>A cleaned CSV (with applied NAs)</p></li>
+<li><p>An R script that reproduces your removals</p></li>
+<li><p>Optional PRM summary when used (see below)</p></li>
+<li><p><strong>Physical Boundary Module (PRM) function:</strong> The
+<strong>Physical Range Module (PRM)</strong> removes out-of-range values
+to <code>NA</code> based on similar <strong>variables</strong> using
+patterns like <code>^SWC($|_)</code> or <code>^P($|_)</code>.<br />
 Columns containing <code>&quot;QC&quot;</code> are skipped by default. No columns
-are removed.</p>
+are removed.</p></li>
+</ul>
 <p>Source of ranges: <em>AmeriFlux Technical Documents, Table A1
 (Physical Range Module)</em>.</p>
 <div id="quick-start" class="section level2">
