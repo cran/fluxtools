@@ -1,7 +1,7 @@
 Type: Package
 Package: fluxtools
 Title: A 'shiny' App for Reproducible QA/QC of Eddy Covariance Data
-Version: 0.7.0
+Version: 0.7.1
 Authors@R: 
     person("Kesondra", "Key", , "keyke@iu.edu", role = c("aut", "cre"))
 Description: An interactive 'shiny'-based tool for exploration and quality
@@ -23,8 +23,8 @@ BuildVignettes: TRUE
 Encoding: UTF-8
 RoxygenNote: 7.3.2
 NeedsCompilation: no
-Packaged: 2025-09-18 19:38:57 UTC; keyke
+Packaged: 2025-09-19 01:00:34 UTC; Karmic Dreamwork
 Author: Kesondra Key [aut, cre]
 Maintainer: Kesondra Key <keyke@iu.edu>
 Repository: CRAN
-Date/Publication: 2025-09-18 20:00:02 UTC
+Date/Publication: 2025-10-01 16:20:02 UTC
